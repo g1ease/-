@@ -1,0 +1,2 @@
+wolf - this is the shortest string
+ - this is the shortest string

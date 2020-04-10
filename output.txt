@@ -1,0 +1,2 @@
+Баланс скобок нарушен! Закрывающих скобок больше на 1
+This file can not be opened!This file can not be opened!This file can not be opened!

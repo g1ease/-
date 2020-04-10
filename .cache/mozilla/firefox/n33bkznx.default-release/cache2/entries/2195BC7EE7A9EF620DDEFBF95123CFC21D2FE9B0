@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru-RU"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ru-RU"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru-RU"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru-RU"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Баланс фигурных скобок в файле</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/wp-content/images/favicon.ico" type="image/x-icon" />
+
+  
+<!-- All in One SEO Pack 2.2.7.2 by Michael Torbert of Semper Fi Web Design[376,454] -->
+<!-- /all in one seo pack -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" href="/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.2.2">
+<link rel="stylesheet" href="/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.8-5815" media="screen">
+<link rel="stylesheet" href="/plugins/contact-form-7/includes/css/styles.css?ver=4.3">
+<link rel="stylesheet" href="/plugins/wp-postratings/postratings-css.css?ver=1.82">
+<link rel="stylesheet" href="/plugins/wordpress-popular-posts/style/wpp.css?ver=3.2.2">
+<link rel="stylesheet" href="/assets/css/custom-style.css?ver=9a2dd99b82ca338b034e8730b94139d2">
+<link rel="stylesheet" href="/assets/css/main.min.css?ver=9a2dd99b82ca338b034e8730b94139d3">
+<link rel="stylesheet" href="//cppstudio.com/plugins/transposh-translation-filter-for-wordpress/widgets/flags/tpw_flags.css?ver=0.9.7.2">
+<link rel="stylesheet" href="/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0">
+<link rel="stylesheet" href="/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shCoreDefault.css?ver=3.0">
+<link rel="stylesheet" href="/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0">
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script>window.jQuery || document.write('<script src="http://cppstudio.com/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script type='text/javascript' src='/assets/js/vendor/modernizr-2.6.2.min.js'></script>
+<script type='text/javascript' src='/wp-content/js/share42.js?ver=2a3e700c4c6e3d70a95b00241a845696'></script>
+<script type='text/javascript' src='/assets/js/custom.js?ver=4.2.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var t_jp = {"ajaxurl":"http:\/\/cppstudio.com\/wp-admin\/admin-ajax.php","plugin_url":"\/\/cppstudio.com\/wp-content\/plugins\/transposh-translation-filter-for-wordpress","lang":"ru","olang":"ru","prefix":"tr_","preferred":"1","msn":"1","google":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//cppstudio.com/plugins/transposh-translation-filter-for-wordpress/js/transposh.js?ver=0.9.7.2'></script>
+<script type='text/javascript' src='/plugins/wp-syntaxhighlighter/js/rc-textarea-hl.js?ver=1.3'></script>
+<link rel="alternate" hreflang="uk" href="/uk/post/1412/"/><link rel="alternate" hreflang="en" href="/en/post/1412/"/><link rel="alternate" hreflang="de" href="/de/post/1412/"/><link rel="alternate" hreflang="be" href="/be/post/1412/"/><link rel="alternate" hreflang="kk" href="/kk/post/1412/"/><link rel="alternate" hreflang="uz" href="/uz/post/1412/"/><link rel="alternate" hreflang="tr" href="/tr/post/1412/"/><link rel="stylesheet" id="testme-style-css"  href="http://cppstudio.com/plugins/wp_testme/testme_style.css" type="text/css" media="all" /> <script type="text/javascript" src="http://cppstudio.com/plugins/wp_testme/js/testme.js"></script>	<script type="text/javascript">
+		jQuery(function($){
+			$('.comment-reply-link').click(function(e){
+				e.preventDefault();
+				var args = $(this).data('onclick');
+				args = args.replace(/.*\(|\)/gi, '').replace(/\"|\s+/g, '');
+				args = args.split(',');
+				tinymce.EditorManager.execCommand('mceRemoveControl', true, 'comment');
+				addComment.moveForm.apply( addComment, args );
+				tinymce.EditorManager.execCommand('mceAddControl', true, 'comment');
+			});
+		});
+	</script>
+	<link rel="canonical" href="http://cppstudio.com/post/1412/">
+
+  <link rel="alternate" type="application/rss+xml" title="Программирование для начинающих на С++ Feed" href="http://cppstudio.com/feed/">
+</head>
+    <body class="single single-post postid-1412 single-format-standard 1412">
+
+		<!-- RotaBan.ru Ad Code -->
+		<script type="text/javascript">
+//			(function(){
+//				var rb = document.createElement('script');
+//				d = new Date();
+//				d.setHours(0);
+//				d.setMinutes(0);
+//				d.setSeconds(0);
+//				d.setMilliseconds(0);
+//				rb.type = 'text/javascript';
+//				rb.async = true;
+//				rb.src = '//s1.rotaban.ru/rotaban.js?v=' + d.getTime();
+//				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(rb);
+//			})();
+		</script>
+		<!-- END RotaBan.ru Ad Code -->
+
+                <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter4088644 = new Ya.Metrika({id:4088644, enableAll: true, trackHash:true, webvisor:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/4088644" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+        <!--[if lt IE 8]><div class="alert alert-warning">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a> для комфортной работы в интернете.</div><![endif]-->
+
+        <header class="banner navbar navbar-inverse navbar-static-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://cppstudio.com/">CppStudio</a>
+    </div>
+
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul id="menu-glavnoe-menyu" class="nav navbar-nav"><li class="dropdown menu-s"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://cppstudio.com/pomoshh/">С++ <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="menu-istoriya-vozniknoveniya-c"><a href="/post/1984/">История возникновения C++</a></li>
+	<li class="menu-kratkoe-opisanie-s"><a href="/post/1980/">Краткое описание С++</a></li>
+	<li class="menu-chasto-zadavaemye-voprosy-po-s"><a href="/post/2025/">Часто задаваемые вопросы по С++</a></li>
+	<li class="menu-pristupaya-k-izucheniyu-c"><a href="/post/134">Приступая к изучению C++</a></li>
+	<li class="menu-vybor-ide"><a href="/post/154/">Выбор IDE</a></li>
+</ul>
+</li>
+<li class="dropdown menu-dlya-nachinayushhix"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://cppstudio.com/dlya-nachinayushhix/">Для начинающих <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="menu-rekomendovannaya-literatura"><a href="http://cppstudio.com/cat/299/">Рекомендованная литература</a></li>
+	<li class="menu-interesnoe-o-programmirovanii"><a href="http://cppstudio.com/cat/270/">Интересное о программировании</a></li>
+	<li class="menu-rekomendacii-po-napisaniyu-koda-v-c"><a href="http://cppstudio.com/cat/292/">Рекомендации по написанию кода в C++</a></li>
+	<li class="menu-otladka-programm"><a href="http://cppstudio.com/cat/284/">Отладка программ</a></li>
+</ul>
+</li>
+<li class="dropdown menu-uchebniki"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/uchebniki">Учебники <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="menu-yazyk-programmirovaniya-si"><a href="http://cppstudio.com/cat/271/">Язык программирования Си</a></li>
+	<li class="menu-yazyk-programmirovaniya-s"><a href="http://cppstudio.com/cat/274/">Язык программирования С++</a></li>
+	<li class="menu-biblioteka-standartnyx-shablonov-stl"><a href="http://cppstudio.com/cat/300/">Библиотека стандартных шаблонов (STL)</a></li>
+	<li class="menu-algoritmy-i-struktury-dannyx-v-s"><a href="http://cppstudio.com/cat/293/">Алгоритмы и структуры данных в С++</a></li>
+	<li class="menu-okonnye-prilozheniya"><a href="http://cppstudio.com/cat/330/">Оконные приложения</a></li>
+	<li class="menu-win32-api"><a href="http://cppstudio.com/cat/333/">Win32 API</a></li>
+	<li class="menu-biblioteka-qt"><a href="http://cppstudio.com/cat/337/">Библиотека Qt</a></li>
+</ul>
+</li>
+<li class="dropdown menu-praktikum"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://cppstudio.com/praktikum/">Практикум <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="current-post-ancestor active current-post-parent menu-sbornik-zadach-dlya-praktiki"><a href="http://cppstudio.com/cat/285/">Сборник задач для практики</a></li>
+	<li class="menu-nedo-kod"><a href="http://cppstudio.com/cat/307/">Недо-код</a></li>
+	<li class="menu-testy-po-s"><a href="http://cppstudio.com/praktikum/testy-po-programmirovaniyu-na-yazyke-s/">Тесты по С++</a></li>
+</ul>
+</li>
+<li class="dropdown menu-spravochnik"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="http://cppstudio.com/spravochnik/">Справочник <b class="caret"></b></a>
+<ul class="dropdown-menu">
+	<li class="menu-standartnye-zagolovochnye-fajly-iz-si-v-s"><a href="http://cppstudio.com/cat/309/">Стандартные заголовочные файлы из Си в С++</a></li>
+	<li class="menu-biblioteki-s"><a href="/spravochnik/">Библиотеки С++</a></li>
+	<li class="menu-sintaksis-yazyka-s"><a href="http://cppstudio.com/cat/308/">Синтаксис языка С++</a></li>
+</ul>
+</li>
+<li class="menu-kontakty"><a href="http://cppstudio.com/forma-obratnoj-svyazi/">Контакты</a></li>
+</ul>        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navLogin">Авторизация<b class="caret"></b></a>
+                <div class="dropdown-menu" style="padding: 8px;width:350px;">
+                    <div class="widget cpp_bbp_widget_login">			<form method="post" action="http://cppstudio.com/wp-login.php" role="form">
+				<div class="form-group">
+					<input type="text" class="form-control" name="log"
+						   value="" size="20" id="user_login"
+						   placeholder="Имя пользователя" tabindex="101"/>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" name="pwd"
+						   value="" size="20" id="user_pass"
+						   placeholder="Пароль" tabindex="102"/>
+				</div>
+				<div class="checkbox text-muted">
+					<small>
+						<input type="checkbox" name="rememberme" style="margin-top:2px;margin-right: 2px"
+							   value="forever" 							   id="rememberme" tabindex="103"/>
+						<label for="rememberme" class="pull-left" style="margin-top:2px">Запомнить</label>
+																					&nbsp;&middot;&nbsp;<a href="/wp-login.php?action=register"
+													   title="Зарегистрироваться"
+													   class="bbp-register-link">Зарегистрироваться</a>
+																						&nbsp;&middot;&nbsp;<a href="/wp-login.php?action=lostpassword"
+													   title="Забыли пароль?"
+													   class="bbp-lostpass-link">Забыли пароль?</a>
+													</small>
+				</div>
+				<div class="form-group" style="margin-bottom: 0">
+					<div class="pull-right">
+						<button type="submit" name="user-submit" id="user-submit" tabindex="104"
+								class="btn btn-primary btn-sm">Войти</button>
+					</div>
+					<div><script src="//ulogin.ru/js/ulogin.js" type="text/javascript"></script><div class="ulogin_block"><div class="ulogin_label">&nbsp;</div><div id=uLogin0 class="ulogin_panel" data-ulogin="display=panel;providers=vkontakte,facebook,twitter,google;hidden=;fields=email,nickname;optional=first_name,last_name,photo;redirect_uri=http%3A%2F%2Fcppstudio.com%2F%3Fulogin%3Dtoken%26backurl%3Dhttp%253A%252F%252Fcppstudio.com%252Fpost%252F1412%252F;"></div><div style="clear:both"></div></div><script>uLogin.customInit('uLogin0')</script></div>
+					
+		<input type="hidden" name="user-cookie" value="1" />
+
+		<input type="hidden" id="bbp_redirect_to" name="redirect_to" value="http://cppstudio.com/post/1412/" /><input type="hidden" id="_wpnonce" name="_wpnonce" value="c1993d52df" /><input type="hidden" name="_wp_http_referer" value="/post/1412/" />				</div>
+			</form>
+		</div>                </div>
+            </li>
+        </ul>
+    </nav>
+  </div>
+</header>
+
+        <div class="wrap container" role="document">
+			<div class="row">
+				<div class="col-md-6 text-center">
+					<!-- RotaBan.ru Zone Code -->
+					<div id="rotaban_218058" class="rbrocks rotaban_593600c3fca04942b7fa141285363e15"></div>
+					<!-- END RotaBan.ru Zone Code -->
+				</div>
+				<div class="col-md-6 text-center">
+					<!-- RotaBan.ru Zone Code -->
+					<div id="rotaban_218059" class="rbrocks rotaban_593600c3fca04942b7fa141285363e15"></div>
+					<!-- END RotaBan.ru Zone Code -->
+				</div>
+			</div>
+
+            <div>
+                                    <ol class="breadcrumb">
+                        <!-- Breadcrumb NavXT 5.2.2 -->
+<li class="home"><a title="Перейти к Программирование для начинающих на С++." href="http://cppstudio.com"><span class="glyphicon glyphicon-home"></span></a></li>
+<li><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Перейти к рубрике Сборник задач для практики" href="http://cppstudio.com/cat/285/" class="taxonomy category">Сборник задач для практики</a></span></li>
+<li><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Перейти к рубрике Normal: задачи средней сложности" href="http://cppstudio.com/cat/285/288/" class="taxonomy category">Normal: задачи средней сложности</a></span></li>
+<li class="current_item">Баланс фигурных скобок в файле</li>
+                    </ol>
+                                            </div>
+            <div class="content row">
+                <div class="main col-sm-9" role="main">
+                    
+	
+	<article class="post-1412 post type-post status-publish format-standard hentry category-288 category-285">
+		<header>
+			<div class="post-title">
+				<h1 class="entry-title">Баланс фигурных скобок в файле</h1>
+			</div>
+		</header>
+
+							<div id="level">
+				<span>Уровень сложности: </span>
+					<span title="Normal" class="task-level">
+					<span class="red glyphicon glyphicon-fire"></span>
+					<span class="red glyphicon glyphicon-fire"></span>
+					<span class="red glyphicon glyphicon-fire"></span>
+							<span class="gray glyphicon glyphicon-fire"></span>
+					<span class="gray glyphicon glyphicon-fire"></span>
+			</span>
+			</div>
+				<div id="rating-post">
+			<div id="post-ratings-1412" class="post-ratings" itemscope itemtype="http://schema.org/Article"><img src="http://cppstudio.com/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="8 votes, average: 4,88 out of 5" title="8 votes, average: 4,88 out of 5" class="post-ratings-image" /><img src="http://cppstudio.com/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="8 votes, average: 4,88 out of 5" title="8 votes, average: 4,88 out of 5" class="post-ratings-image" /><img src="http://cppstudio.com/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="8 votes, average: 4,88 out of 5" title="8 votes, average: 4,88 out of 5" class="post-ratings-image" /><img src="http://cppstudio.com/plugins/wp-postratings/images/stars_crystal/rating_on.gif" alt="8 votes, average: 4,88 out of 5" title="8 votes, average: 4,88 out of 5" class="post-ratings-image" /><img src="http://cppstudio.com/plugins/wp-postratings/images/stars_crystal/rating_half.gif" alt="8 votes, average: 4,88 out of 5" title="8 votes, average: 4,88 out of 5" class="post-ratings-image" /> <em>Оценка: <strong>4,88</strong> ( голосов: <strong>8</strong></em> )<br /><em>Чтобы проголосовать, вы должны зарегистрироваться.</em><meta itemprop="headline" content="Баланс фигурных скобок в файле" /><meta itemprop="description" content="
+
+
+	Задание
+	Решение
+
+
+
+В текстовом файле, содержащем текст программы на языке&nbsp;Си, проверить соответствие открывающихся и закрывающихся фигурных скобок&nbsp;{&nbsp;и&nbsp;}. Результат проверки вывести на экр..." /><meta itemprop="datePublished" content="2012-09-12T02:49:18+00:00" /><meta itemprop="url" content="http://cppstudio.com/post/1412/" /><div style="display: none;" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="bestRating" content="5" /><meta itemprop="worstRating" content="1" /><meta itemprop="ratingValue" content="4.88" /><meta itemprop="ratingCount" content="8" /></div></div><div id="post-ratings-1412-loading" class="post-ratings-loading">
+			<img src="http://cppstudio.com/plugins/wp-postratings/images/loading.gif" width="16" height="16" alt="Loading..." title="Loading..." class="post-ratings-image" />Loading...</div>		</div>
+
+		<div class="col-lg-12" style="padding: 0;">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+		 style="display:inline-block;width:728px;height:90px"
+		 data-ad-client="ca-pub-6902622887579208"
+		 data-ad-slot="2864386176"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<!--		-->
+				<div class="entry-content">
+			<p><!-- Tabs --></p>
+<div class="tabbable">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Задание</a></li>
+<li><a href="#tab2" data-toggle="tab">Решение</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tab1">
+<div class="alert alert-success" style="text-align: justify;">В текстовом файле, содержащем текст программы на языке <strong>Си</strong>, проверить соответствие открывающихся и закрывающихся фигурных скобок <code>{</code> и <code>}</code>. Результат проверки вывести на экран и записать в виде фразы в текстовый файл. Результат работы программы (вывод) поместить в отдельный текстовый файл (например, <code>"out . txt "</code> ), продублировав на экране.</div>
+<p style="text-align: justify;">Интересное задание, подумайте как его решить. Оно не сложное, как кажется на первый взгляд. Для написания этой программы вам помогут следующие статьи: <a href="/uchebniki/yazyk-programmirovaniya-s/rabota-s-fajlami-v-s/">файлы в С++</a>, возможно &#8212; <a href="/uchebniki/yazyk-programmirovaniya-s/simvoly-i-stroki-v-s/">работа со с символами</a>. Результат работы программы показан ниже:</p>
+</div>
+<div class="tab-pane" id="tab2">
+<pre class="no_translate brush: cpp; gutter: true">#include &lt;iostream&gt;
+
+using namespace std;
+#include &lt;fstream&gt;
+int main()
+{
+    char file_name[100]; // буфер хранения пути к файлу
+    cout &lt;&lt; &quot;Введите имя файла: &quot;;
+    cin &gt;&gt; file_name;
+    ifstream fin(file_name); // открываем файл для чтения
+
+        if (!fin.is_open()) // если файл не открыт
+            cout &lt;&lt; &quot;Файл не может быть открыт!\n&quot;; // сообщить об этом
+        else
+        {
+            int counterBracketOpen = 0, // количество вхождений фигурных открывающихся скобок
+                counterBracketClose = 0; // количество вхождений фигурных закрывающихся скобок
+
+            char symbol; // временная переменная для хранения символов считанных из файла
+
+            fin &gt;&gt; symbol; // предварительное считывание из файла символа
+
+            while (fin)
+            {
+             if (symbol == &#039;{&#039;) counterBracketOpen++; // инкремент количества октрывающихся фигурных скобок
+
+             if (symbol == &#039;}&#039;)
+             {
+                 counterBracketClose++; // инкремент количества закрывающихся фигурных скобок
+
+                 // если нарушен порядок следования скобок
+                 if (counterBracketClose &gt; counterBracketOpen)  break; // выход из цикла
+             }
+            fin &gt;&gt; symbol; // считываем символ из файла
+            } // конец while
+
+            fin.close(); // закрываем исходный файл
+
+            ofstream fout(&quot;./out&quot;); // создаём файл для записи результата проверки
+            // выполнияем проверку баланса скобок
+            if (counterBracketOpen == 0 &amp;&amp; counterBracketClose == 0)
+            {
+                cout &lt;&lt; &quot;В файле нет фигурных скобок!&quot; &lt;&lt; endl;
+                fout &lt;&lt; &quot;В файле нет фигурных скобок!&quot; &lt;&lt; endl;
+            }
+            else
+                if (counterBracketOpen == counterBracketClose)
+                {
+                    cout &lt;&lt; &quot;Баланс скобок не нарушен!&quot; &lt;&lt; endl;
+                    fout &lt;&lt; &quot;Баланс скобок не нарушен!&quot; &lt;&lt; endl;
+                }
+                else
+                {
+                    cout &lt;&lt; &quot;Баланс Скобок нарушен!&quot; &lt;&lt; endl;
+                    fout &lt;&lt; &quot;Баланс Скобок нарушен!&quot; &lt;&lt; endl;
+                }
+            fout.close(); // закрываем файл результата
+
+        }
+    return 0;
+}</pre>
+<p style="text-align: justify;">Для корректного отображения русского текста в Windows, прочитайте статью Кириллица в консоли. Пример работы программы:</p>
+</div>
+</div>
+</div>
+<p><!-- //Tabs --><br />
+<img class="aligncenter" alt="Баланс фигурных скобок в файле" src="/wp-content/images/article/image_source37.png" width="486" height="86" /></p>
+		</div>
+
+		
+				<div id="tasks" class="panel panel-info">
+			<div class="panel-heading">Следующие статьи помогут вам в решении данной задачи: <span class="glyphicon glyphicon-chevron-down"></span></div>
+			<div class="panel-body">
+									<p onclick="window.location.href='http://cppstudio.com/post/446/'; return false">
+						<span class="glyphicon glyphicon-hand-right"></span>
+						<a href="http://cppstudio.com/post/446/">Работа с файлами в С++</a>
+					</p>
+							</div>
+		</div>
+		
+		<div class="col-lg-12" style="padding: 0;">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+		 style="display:inline-block;width:728px;height:90px"
+		 data-ad-client="ca-pub-6902622887579208"
+		 data-ad-slot="4341119372"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+				
+		<div class="sub-paging">
+					</div>
+
+		<div class="row additional-panel">
+	<div class="col-lg-3" style="padding-left: 10px;">
+		<span class="glyphicon glyphicon-comment"></span>
+		<a href="/topics/">Обсудить на форуме</a>
+	</div>
+	<div class="col-lg-3" style="padding: 0;">
+		<span class="glyphicon glyphicon-user"></span>
+		Автор: <a href="/forums/users/admin/">
+					<span class="vcard author">
+						<span class="fn">admin</span>
+					</span>
+				</a>
+	</div>
+	<div class="col-lg-3" style="padding: 0;">
+		<span class="glyphicon glyphicon-calendar"></span>
+		Дата:
+			<span class="date updated">12.09.2012</span>
+	</div>
+	<div class="col-lg-3" style="padding-right: 0; padding-left: 0;">
+		<span class="glyphicon glyphicon-new-window"></span>
+		Поделиться:
+		<div class="share42init" data-url="http://cppstudio.com/post/1412/"
+			 data-title="Баланс фигурных скобок в файле"></div>
+	</div>
+</div>
+		<ul class="pager">
+			<li class="previous"></li>
+			<li class="next"></li>
+		</ul>
+
+		<div class='yarpp-related'>
+<div class="alert alert-info" style="clear: left;"><strong>Похожие статьи:</strong><ol>
+<li><a href="http://cppstudio.com/post/1381/" rel="bookmark" title="Аналоги строковых функций С++">Аналоги строковых функций С++ </a></li>
+<li><a href="http://cppstudio.com/post/446/" rel="bookmark" title="Работа с файлами в С++">Работа с файлами в С++ </a></li>
+<li><a href="http://cppstudio.com/post/1398/" rel="bookmark" title="Слова сформированные из первых букв слов каждой строки файла">Слова сформированные из первых букв слов каждой строки файла </a></li>
+<li><a href="http://cppstudio.com/post/437/" rel="bookmark" title="Символы и строки в С++">Символы и строки в С++ </a></li>
+<li><a href="http://cppstudio.com/post/2629/" rel="bookmark" title="Печать ромба символами ASCII">Печать ромба символами ASCII </a></li>
+</ol></div>
+</div>
+
+<!--		-->
+				<div id="vk_comments"></div>
+		<script>
+			var VK_Comment_loader = function() {
+				var oHead = document.getElementsByTagName("head")[0];
+				var oScript = document.createElement("script");
+				oScript.type = "text/javascript";
+				oScript.src = "//vk.com/js/api/openapi.js?1000";
+				oHead.appendChild(oScript);
+				oScript.onload = function() {
+					if (jQuery('#vk_comments').length) {
+						VK.init({apiId: 4295029, onlyWidgets: true});
+						VK.Widgets.Comments("vk_comments", {
+							width: 0,
+							limit: 10,
+							attach: "graffiti,photo,link",
+							autoPublish: 1,
+							mini: 'auto',
+							height: 0,
+							norealtime: 0						});
+						VK.Observer.subscribe("widgets.comments.new_comment", function(num, last_comment, date, sign) {
+							jQuery.ajax({
+								type: 'POST',
+								url: '/wp-content/plugins/vk-comments/vk-mail.php',
+								data: {
+									id: '1412',
+									comment: last_comment
+								},
+								success: function(response) {
+									//console.log('vk comments add ' + response);
+								}
+							});
+						});
+						VK.Observer.subscribe("widgets.comments.delete_comment", function() {
+							//console.log('vk comments del');
+						});
+					}
+				}
+			};
+			if (document.addEventListener) {
+				document.addEventListener("DOMContentLoaded", function() {
+					document.removeEventListener("DOMContentLoaded", arguments.callee, false);
+					VK_Comment_loader();
+				}, false );
+			} else if (document.attachEvent) {
+				document.attachEvent("onreadystatechange", function() {
+					if (document.readyState === "complete") {
+						document.detachEvent("onreadystatechange", arguments.callee);
+						VK_Comment_loader();
+					}
+				});
+			}
+		</script>
+				<div class="row">
+	<div class="col-md-12 text-center">
+		<!-- RotaBan.ru Zone Code -->
+		<div id="rotaban_227614" class="rbrocks rotaban_593600c3fca04942b7fa141285363e15"></div>
+		<!-- END RotaBan.ru Zone Code -->
+	</div>
+</div>
+  <section id="comments">
+    <h3>Комментарии</h3>
+
+    <ol class="media-list">
+      
+  <li id="comment-4111" class="comment byuser comment-author-arenim even thread-even depth-1 media comment-4111">
+        <div class="pull-left media-object img-thumbnail">
+        <img alt='' src='http://1.gravatar.com/avatar/177776e954a32cd0b512ed7827caa2e0?s=64&#038;d=wavatar&#038;r=g' srcset='http://1.gravatar.com/avatar/177776e954a32cd0b512ed7827caa2e0?s=128&amp;d=wavatar&amp;r=g 2x' class='avatar avatar-64 photo' height='64' width='64'>    </div>
+
+<div class="media-body">
+  <h4 class="media-heading"><a href='https://plus.google.com/+AlexanderTrousevich' rel='external nofollow' class='url'>Alexander Trousevich</a></h4>
+  <time datetime="2018-04-03T19:07:11+00:00"><a href="/post/1412/comment-page-4/#comment-4111">03.04.2018</a></time>
+  
+  
+  <pre class="brush: text; gutter: true">// Language: rust. Details: rust-lang.org
+
+use std::fs::File;
+use std::io::Read;
+
+fn main() {
+    let mut f = File::open(&quot;src/main.rs&quot;).expect(&quot;IO Error&quot;);
+    let mut content = String::new();
+    f.read_to_string(&amp;mut content).expect(&quot;IO Error&quot;);
+    let mut balance = 0;
+    for s in content.chars() {
+        match s {
+            &#039;{&#039; =&gt; balance += 1,
+            &#039;}&#039; =&gt; balance -= 1,
+            _ =&gt; {}
+        }
+    }
+    match balance {
+        0 =&gt; println!(&quot;All OK&quot;),
+        _ =&gt; println!(&quot;All NOT OK&quot;)
+    }
+}</pre>
+  <a rel="nofollow" class="comment-reply-login" href="http://cppstudio.com/wp-login.php?redirect_to=http%3A%2F%2Fcppstudio.com%2Fpost%2F1412%2F">Войдите, чтобы ответить</a>  </div></li>
+
+  <li id="comment-4003" class="comment byuser comment-author-danilsava odd alt thread-odd thread-alt depth-1 media comment-4003">
+        <div class="pull-left media-object img-thumbnail">
+        <img alt='' src='http://2.gravatar.com/avatar/bbfd35c419ed1733f74a46990bb3c87e?s=64&#038;d=wavatar&#038;r=g' srcset='http://2.gravatar.com/avatar/bbfd35c419ed1733f74a46990bb3c87e?s=128&amp;d=wavatar&amp;r=g 2x' class='avatar avatar-64 photo' height='64' width='64'>    </div>
+
+<div class="media-body">
+  <h4 class="media-heading">DanilSava</h4>
+  <time datetime="2018-01-14T19:32:35+00:00"><a href="/post/1412/comment-page-4/#comment-4003">14.01.2018</a></time>
+  
+  
+  <p>//{} proverka;<br />
+#include&lt;iostream&gt;<br />
+#include&lt;fstream&gt;<br />
+#include&lt;conio.h&gt;<br />
+using namespace std;</p>
+<p>char *sim = new char [1]; // массив для считывания символа из файла<br />
+int mun1 = 0, mun2 = 0, n = 0, razmer = 0;<br />
+void rachot(char *sim, int *mun1, int *mun2); //функция расчета mun1={ и mun2=}<br />
+int rezul(int mun1, int num2);</p>
+<p>int main()<br />
+{<br />
+ifstream file(&#171;d:\\12.txt&#187;);<br />
+if (file.is_open())<br />
+cout &lt;&lt;&#171;file open&#187;;<br />
+else cout &lt;&lt; &#171;file close&#187;;<br />
+file.seekg(0, ios_base::end);// подчет количесвтва позиций в файле<br />
+razmer=file.tellg();// подчет количесвтва позиций в файле<br />
+do // цикл считывания символов<br />
+{<br />
+file.seekg(n, ios_base::beg); // перемещение по файлу<br />
+file.read (sim, 1);<br />
+rachot(sim, &amp;mun1, &amp;mun2);<br />
+++n;<br />
+} while (n&lt;razmer); // проверка достижения конца файла<br />
+if (rezul(mun1, mun2)) // проверка равенства { }<br />
+cout &lt;&lt; &#171;balans&#187;;<br />
+else cout &lt;&lt; &#171;no balans&#187; &lt;&lt; endl;<br />
+_getch();<br />
+}</p>
+<p>void rachot(char *sim, int *mun1, int *mun2)<br />
+{<br />
+if (sim[0] == &#8216;{&#8216;)<br />
+++(*mun1);<br />
+if (sim[0] == &#8216;}&#8217;)<br />
+++(*mun2);<br />
+}<br />
+int rezul(int mun1, int num2)<br />
+{<br />
+if (mun1 == mun2)<br />
+return 1;<br />
+else return 0;<br />
+}</p>
+  <a rel="nofollow" class="comment-reply-login" href="http://cppstudio.com/wp-login.php?redirect_to=http%3A%2F%2Fcppstudio.com%2Fpost%2F1412%2F">Войдите, чтобы ответить</a>  </div></li>
+    </ol>
+
+        <nav>
+      <ul class="pager">
+                  <li class="previous"><a href="http://cppstudio.com/post/1412/comment-page-3/#comments" >&larr; Старые комментарии</a></li>
+                      </ul>
+    </nav>
+    
+      </section><!-- /#comments -->
+
+
+  <section id="respond">
+    <h3>Оставить комментарий</h3>
+    <p class="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link" href="/post/1412/#respond" style="display:none;">Нажмите, чтобы отменить ответ.</a></p>
+          <p>Вы должны <a href="http://cppstudio.com/wp-login.php?redirect_to=http%3A%2F%2Fcppstudio.com%2Fpost%2F1412%2F">войти</a>, чтобы оставить комментарий.</p>
+      </section><!-- /#respond -->
+	</article>
+                </div><!-- /.main -->
+                                    <aside class="sidebar col-sm-3" role="complementary">
+                        <section class="widget search-3 widget_search"><div class="widget-inner"><form role="search" method="get" class="search-form form-inline" action="http://cppstudio.com/">
+  <div class="input-group">
+    <input type="search" value="" name="s" class="search-field form-control" placeholder="Поиск...">
+    <label class="hide">Поиск:</label>
+    <span class="input-group-btn">
+      <button type="submit" class="search-submit btn btn-primary">Поиск</button>
+    </span>
+  </div>
+</form>
+</div></section><section class="widget transposh-2 widget_transposh"><div class="widget-inner"><h3>Translation</h3><div class="no_translate transposh_flags" ><a href="/post/1412/" class="tr_active"><img src="//cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/ru.png" title="Русский" alt="Русский"/></a><a href="/post/1412/" class="tr_active">Русский</a><br/><a href="/uk/post/1412/"><img src="//cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/ua.png" title="Українська" alt="Українська"/></a><a href="/uk/post/1412/">Українська</a><br/><a href="/en/post/1412/"><img src="//cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/us.png" title="English" alt="English"/></a><a href="/en/post/1412/">English</a><br/><a href="/de/post/1412/"><img src="//cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/de.png" title="Deutsch" alt="Deutsch"/></a><a href="/de/post/1412/">Deutsch</a><br/><a href="/be/post/1412/"><img src="//cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/by.png" title="Беларуская" alt="Беларуская"/></a><a href="/be/post/1412/">Беларуская</a><br/><a href="/kk/post/1412/"><img src="//cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/kz.png" title="Қазақ тілі" alt="Қазақ тілі"/></a><a href="/kk/post/1412/">Қазақ тілі</a><br/><a href="/uz/post/1412/"><img src="//cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/uz.png" title="Oʻzbek tili" alt="Oʻzbek tili"/></a><a href="/uz/post/1412/">Oʻzbek tili</a><br/><a href="/tr/post/1412/"><img src="//cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/tr.png" title="Türkçe" alt="Türkçe"/></a><a href="/tr/post/1412/">Türkçe</a><br/></div><div id="tr_credit"></div></div></section>                    </aside><!-- /.sidebar -->
+                            </div><!-- /.content -->
+        </div><!-- /.wrap -->
+
+        <footer class="content-info" role="contentinfo">
+	<div class="container">
+		<div class="col-lg-8" style="padding-left: 0;">
+			<section class="widget widget_cppstudio_lastpages-2 widget_cppstudio_lastpages"><div class="widget-inner"><h3>Новое</h3>
+		<div class="well" style="padding: 8px 0">
+			<ul class="nav nav-list">
+									<li>
+						<a href="http://cppstudio.com/post/11167/">
+							<span class="glyphicon glyphicon-chevron-right"></span> Особенности Qt: слоты и сигналы, описание QObject и QApplication, виды окон и т.д.						</a>
+					</li>
+									<li>
+						<a href="http://cppstudio.com/post/11127/">
+							<span class="glyphicon glyphicon-chevron-right"></span> Первая программа на Qt:						</a>
+					</li>
+									<li>
+						<a href="http://cppstudio.com/post/11097/">
+							<span class="glyphicon glyphicon-chevron-right"></span> Введение - графическая библиотека Qt						</a>
+					</li>
+									<li>
+						<a href="http://cppstudio.com/post/10103/">
+							<span class="glyphicon glyphicon-chevron-right"></span> Наследование классов						</a>
+					</li>
+									<li>
+						<a href="http://cppstudio.com/post/10058/">
+							<span class="glyphicon glyphicon-chevron-right"></span> Перегрузка операторов в С++ (часть 2)						</a>
+					</li>
+							</ul>
+		</div>
+
+		</div></section>
+<!-- WordPress Popular Posts Plugin v3.2.2 [W] [daily] [views] [custom] -->
+<section class="widget wpp-2 popular-posts"><div class="widget-inner">
+<div class="widget-inner"><h3>Популярное</h3><p>Sorry. No data so far.</p></div></section>
+<!-- End WordPress Popular Posts Plugin v3.2.2 -->
+            <div style="clear: both;"></div>
+			<p>&copy; 2020 CppStudio - Программирование для начинающих на С++</p>
+		</div>
+		<div class="col-lg-4" style="padding-right: 0;">
+			<div class=" pull-right">
+
+				<a id="authorship" href="https://plus.google.com/u/0/106109650739084338784" target="_blank"
+				   rel="author">
+					<img src="/wp-content/images/google-authorship.jpg" border="0">
+				</a>
+				<!--LiveInternet counter-->
+				<script type="text/javascript"><!--
+					document.write("<a href='http://www.liveinternet.ru/click' " +
+						"target='_blank' rel='nofollow'><img src='//counter.yadro.ru/hit?t15.2;r" +
+						escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+						";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+							screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+						";" + Math.random() +
+						"' alt='' title='LiveInternet: показано число просмотров за 24" +
+						" часа, посетителей за 24 часа и за сегодня' " +
+						"border='0' width='88' height='31'><\/a>")
+					//--></script>
+				<!--/LiveInternet-->
+
+				<!--orphus-->
+				<a href="http://orphus.ru" id="orphus" target="_blank" rel="nofollow">
+					<img alt="Система Orphus" src="/wp-content/orphus/orphus.gif" border="0" width="88" height="31"/>
+				</a>
+				<!--/orphus-->
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- WP SyntaxHighlighter Ver.1.7.3 Begin -->
+<script type="text/javascript" src="http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0"></script>
+<script type="text/javascript" src="http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shAutoloader.js?ver=3.0"></script>
+<script type="text/javascript" src="http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0"></script>
+<script type="text/javascript">//<![CDATA[
+	SyntaxHighlighter.autoloader(
+	"applescript	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAppleScript.js?ver=3.0"
+	,"as3 actionscript3	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0"
+	,"bash shell	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0"
+	,"cf coldfusion	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushColdFusion.js?ver=3.0"
+	,"cpp c	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCpp.js?ver=3.0"
+	,"c# c-sharp csharp	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCSharp.js?ver=3.0"
+	,"css	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCss.js?ver=3.0"
+	,"delphi pas pascal	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDelphi.js?ver=3.0"
+	,"diff patch	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDiff.js?ver=3.0"
+	,"erl erlang	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushErlang.js?ver=3.0"
+	,"groovy	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushGroovy.js?ver=3.0"
+	,"java	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJava.js?ver=3.0"
+	,"jfx javafx	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJavaFX.js?ver=3.0"
+	,"js jscript javascript	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js?ver=3.0"
+	,"perl pl	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPerl.js?ver=3.0"
+	,"php	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0"
+	,"plain text	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js?ver=3.0"
+	,"ps powershell	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js?ver=3.0"
+	,"py python	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPython.js?ver=3.0"
+	,"rails ror ruby rb	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushRuby.js?ver=3.0"
+	,"sass scss	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSass.js?ver=3.0"
+	,"scala	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushScala.js?ver=3.0"
+	,"sql	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSql.js?ver=3.0"
+	,"vb vbnet	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushVb.js?ver=3.0"
+	,"xml xhtml xslt html	http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0"
+	);
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['quick-code'] = true;
+	SyntaxHighlighter.defaults['title'] = '';
+	SyntaxHighlighter.defaults['class-name'] = 'notranslate no_translate';
+	SyntaxHighlighter.defaults['collapse'] = false;
+	SyntaxHighlighter.defaults['first-line'] = 1;
+	SyntaxHighlighter.defaults['gutter'] = true;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['smart-tabs'] = true;
+	SyntaxHighlighter.defaults['tab-size'] = 4;
+	SyntaxHighlighter.defaults['toolbar'] = true;
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = "Can't find brush for: ";
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = "Brush wasn't configured for html-script option: ";
+	SyntaxHighlighter.all();
+	
+//]]></script>
+<!-- WP SyntaxHighlighter Ver.1.7.3 End -->
+<link rel="stylesheet" href="/plugins/ulogin/css/ulogin.css?ver=4.2.2">
+<link rel="stylesheet" href="/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.2.2">
+<script type='text/javascript' src='/plugins/bbpress/templates/default/js/editor.js?ver=2.5.8-5815'></script>
+<script type='text/javascript' src='/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/cppstudio.com\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"\u041e\u0442\u043f\u0440\u0430\u0432\u043a\u0430...","cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/plugins/contact-form-7/includes/js/scripts.js?ver=4.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ratingsL10n = {"plugin_url":"http:\/\/cppstudio.com\/plugins\/wp-postratings","ajax_url":"http:\/\/cppstudio.com\/wp-admin\/admin-ajax.php","text_wait":"Please rate only 1 post at a time.","image":"stars_crystal","image_ext":"gif","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src=ratingsL10n.plugin_url+"/images/"+ratingsL10n.image+"/rating_over."+ratingsL10n.image_ext;;
+/* ]]> */
+</script>
+<script type='text/javascript' src='/plugins/wp-postratings/postratings-js.js?ver=1.82'></script>
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='/assets/js/scripts.min.js?ver=2a3e700c4c6e3d70a95b00241a845695'></script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-29800121-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+		<script src="/wp-content/orphus/orphus.js"></script>
+
+	</body>
+</html>
+
+<!-- Dynamic page generated in 0.512 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2020-03-30 08:15:50 -->
+
+<!-- super cache -->�R�yb      ^�^oA9KZ^�        :http://cppstudio.com/post/1412/ necko:classified 1 strongly-framed 1 request-method GET request-Accept-Encoding gzip, deflate response-head HTTP/1.1 200 OK
+Server: nginx-reuseport/1.13.4
+Date: Tue, 31 Mar 2020 12:29:26 GMT
+Content-Type: text/html; charset=UTF-8
+X-Powered-By: PHP/5.3.29
+Vary: Accept-Encoding,Cookie
+Cache-Control: max-age=3, must-revalidate
+WP-Super-Cache: Served supercache file from PHP
+ original-response-headers Server: nginx-reuseport/1.13.4
+Date: Tue, 31 Mar 2020 12:29:26 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Keep-Alive: timeout=30
+X-Powered-By: PHP/5.3.29
+Vary: Accept-Encoding,Cookie
+Cache-Control: max-age=3, must-revalidate
+WP-Super-Cache: Served supercache file from PHP
+ ctid 1 uncompressed-len 0 net-response-time-onstart 93 net-response-time-onstop 171 predictor::resource-count 66 predictor::http://cppstudio.com/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.2.2 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.8-5815 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/contact-form-7/includes/css/styles.css?ver=4.3 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp-postratings/postratings-css.css?ver=1.82 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wordpress-popular-posts/style/wpp.css?ver=3.2.2 1,1,1578703503,4096 predictor::http://cppstudio.com/assets/css/custom-style.css?ver=9a2dd99b82ca338b034e8730b94139d2 1,1,1578703503,4096 predictor::http://cppstudio.com/assets/css/main.min.css?ver=9a2dd99b82ca338b034e8730b94139d3 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/transposh-translation-filter-for-wordpress/widgets/flags/tpw_flags.css?ver=0.9.7.2 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shCoreDefault.css?ver=3.0 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0 1,1,1578703503,4096 predictor::http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-includes/js/wp-emoji-release.min.js?ver=4.2.2 1,1,1578703503,4096 predictor::http://cppstudio.com/assets/js/vendor/modernizr-2.6.2.min.js 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/js/share42.js?ver=2a3e700c4c6e3d70a95b00241a845696 1,1,1578703503,4096 predictor::http://cppstudio.com/assets/js/custom.js?ver=4.2.2 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/transposh-translation-filter-for-wordpress/js/transposh.js?ver=0.9.7.2 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp-syntaxhighlighter/js/rc-textarea-hl.js?ver=1.3 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp_testme/testme_style.css 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp_testme/js/testme.js 1,1,1578703503,4096 predictor::http://ulogin.ru/js/ulogin.js 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp-postratings/images/stars_crystal/rating_on.gif 1,1,1578703503,4097 predictor::http://cppstudio.com/plugins/wp-postratings/images/stars_crystal/rating_half.gif 1,1,1578703503,4097 predictor::http://cppstudio.com/plugins/wp-postratings/images/loading.gif 1,1,1578703503,4097 predictor::http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/images/article/image_source37.png 1,1,1578703503,4097 predictor::http://1.gravatar.com/avatar/177776e954a32cd0b512ed7827caa2e0?s=64&d=wavatar&r=g 1,1,1578703503,4096 predictor::http://2.gravatar.com/avatar/bbfd35c419ed1733f74a46990bb3c87e?s=64&d=wavatar&r=g 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/ru.png 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/ua.png 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/us.png 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/de.png 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/by.png 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/kz.png 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/uz.png 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/plugins/transposh-translation-filter-for-wordpress/img/flags/tr.png 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/images/google-authorship.jpg 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/orphus/orphus.gif 1,1,1578703503,4097 predictor::http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shAutoloader.js?ver=3.0 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/ulogin/css/ulogin.css?ver=4.2.2 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.2.2 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/bbpress/templates/default/js/editor.js?ver=2.5.8-5815 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/contact-form-7/includes/js/scripts.js?ver=4.3 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp-postratings/postratings-js.js?ver=1.82 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-includes/js/comment-reply.min.js?ver=4.2.2 1,1,1578703503,4096 predictor::http://cppstudio.com/assets/js/scripts.min.js?ver=2a3e700c4c6e3d70a95b00241a845695 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/orphus/orphus.js 1,1,1578703503,4096 predictor::http://mc.yandex.ru/metrika/watch.js 1,1,1578703503,4096 predictor::http://counter.yadro.ru/hit?t15.2;rhttps%3A//www.yandex.ru/;s800*600*24;uhttp%3A//cppstudio.com/post/1412/;0.6465141235414266 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCpp.js?ver=3.0 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js?ver=3.0 1,1,1578703503,4096 predictor::http://cppstudio.com/assets/fonts/glyphicons-halflings-regular.woff 1,1,1578703503,4096 predictor::https://adservice.google.ru/adsid/integrator.js?domain=cppstudio.com 1,1,1578703503,4096 predictor::https://adservice.google.com/adsid/integrator.js?domain=cppstudio.com 1,1,1578703503,4096 predictor::https://pagead2.googlesyndication.com/pagead/js/r20200326/r20190131/show_ads_impl_fy2019.js 1,1,1578703503,4096 predictor::https://partner.googleadservices.com/gampad/cookie.js?domain=cppstudio.com&callback=_gfp_s_&client=ca-pub-6902622887579208 1,1,1578703503,4096 predictor::http://cppstudio.com/plugins/wp-postratings/images/stars_crystal/rating_over.gif 1,1,1578703503,4096 predictor::http://www.google-analytics.com/ga.js 1,1,1578703503,4096 predictor::http://userapi.com/js/api/openapi.js?20 1,1,1578703503,4096 predictor::http://vk.com/js/api/openapi.js?1000 1,1,1578703503,4096 predictor::http://cppstudio.com/wp-content/js/icons.png 1,1,1578703503,4096 predictor::https://vk.com/images/upload.gif 1,1,1578703503,4097 predictor::https://mc.yandex.ru/metrika/advert.gif 1,1,1578703503,4097   �N

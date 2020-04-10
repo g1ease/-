@@ -1,0 +1,227 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <termios.h>
+#include <unistd.h>
+
+
+int getch (void)
+{
+        int ch;
+        struct termios oldt, newt;
+
+        tcgetattr(STDIN_FILENO, &oldt);
+        newt = oldt;
+        newt.c_lflag &= ~(ICANON|ECHO);
+        tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+        ch = getchar();
+        tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+
+        return ch;
+}
+
+int k,l,e;
+int z=6;
+
+
+
+typedef struct tagITEM
+{
+  char name[9];
+  int kolvo;
+  int kod;
+} ITEM;
+
+ITEM Men[9];
+int Number=6;
+
+   
+/* Функция для вывода массива */
+void Print( void )
+{
+  int i;
+
+  printf(" N  Код                 Название               Количество\n");
+  for (i = 0; i < 9; i ++)
+    printf("%2i. %-20d %-20s %3d\n", i + 1, Men[i].kod, Men[i].name, Men[i].kolvo);
+  printf("\n");
+} /* End of 'Print' function */
+
+
+/* Функция для сохранения массива в файле */
+void Save( void )
+{
+  FILE *F;
+  int i;
+
+  if ((F = fopen("Basa1.dat", "wt")) == NULL)
+  {
+    fprintf(stderr, "Невозможно открыть для записи файл 'Basa1.dat'\n \n");
+    return;
+  }
+
+  fprintf(F, "%i\n", Number);
+  for (i = 0; i < Number; i ++)
+    fprintf(F, "%d\n%s\n%d\n", Men[i].kod, Men[i].name, Men[i].kolvo);
+
+  fclose(F);
+} /* End of 'Save' function */
+
+
+/* Функция для чтения массива из файла */
+void Load( void )
+{
+  FILE *F;
+  int i;
+
+  if ((F = fopen("Basa1.dat", "rt")) == NULL)
+  {
+    fprintf(stderr, "Невозможно открыть для чтения файл 'Basa1.dat'\n \n");
+    return;
+  }
+
+  fscanf(F, "%i", &Number);
+  for (i = 0; i < Number; i ++)
+    fscanf(F, "%i\n%s\n%i", &Men[i].kod, Men[i].name, &Men[i].kolvo);
+
+  fclose(F);
+} /* End of 'Load' function */
+
+
+/* Функция для добавления элемента */
+void Add( void )
+{
+  if (z == 9)
+  {
+    fprintf(stderr, "Количество препаратов максимально.\n \n");
+    return;
+  }
+  
+  int Check;
+int i;
+int e=0;
+int v;
+
+  Print();
+  printf("Введите код добавляемого препарата > ");
+  scanf("%i", &l);
+  if (l % 1000 != 0 && l < 111)
+  {
+    fprintf(stderr, "Введите корректный код препарата..%i\n \n", i);
+    return;
+  }
+
+  for (i= 0; i < Number ; i ++){
+ if (Men[i].kod == l){
+     Men[i].kolvo = Men[i].kolvo + 1;
+     e=1;}}
+
+if(e==0){
+Men[z].kod = l;
+Men[z].kolvo =  1;
+  printf("Введите название препарата > ");
+  scanf("%s", Men[z].name);
+z+=1;}
+
+printf("Препарат добавлен.\n");
+}
+ /* End of 'Add' function */
+
+
+/* Функция для prodazhi preparata */
+void Del( void )
+{
+  int i;
+
+  Print();
+  printf("Введите код продаваемого препарата > ");
+  scanf("%i", &l);
+  if (l % 1000 != 0 && l < 111)
+  {
+    fprintf(stderr, "Введите корректный код препарата..%i\n \n", i);
+    return;
+  }
+
+  for (i= 0; i < Number ; i ++){
+ if (Men[i].kod == l)
+     Men[i].kolvo = Men[i].kolvo - 1;}
+     printf("Препарат продан.\n"); 
+
+} /* End of 'Del' function */
+
+
+/* Функция для упорядочивания массива по nazvaniy */
+void Sort( void )
+{
+  int i, j;
+  ITEM Temp;
+
+  for (j = z-1; j > 0; j --)
+    for (i = 0; i < j; i ++)
+      if (strcmp(Men[i].name, Men[i + 1].name) > 0)
+      {
+  Temp = Men[i];
+        Men[i] = Men[i + 1];
+        Men[i + 1] = Temp;
+      }
+} /* End of 'Sort' function */
+
+
+
+
+
+/* Вывод меню и чтение номера выбранного действия */
+int Menu( void )
+{
+  int c = 0;
+
+  while ((c < '0' || c > '6') && c != 27)
+  {
+    printf("0 : Завершить работу\n"
+           "1 : Продать препарат\n"
+           "2 : Принять новый препарат\n"
+           "3 : Упорядочить по названию\n"
+           "4 : Загрузить данные\n"
+           "5 : Сохранить данные\n"
+           "6 : Вывести данные\n"
+           ">");
+    c = getch();
+    printf("%c\n\n", c);
+  }
+  return c;
+} /* End of 'Menu' function */
+
+/* Основная функция */
+void main( void )
+{
+  printf("Программа - Аптека.\n"
+         "Установленное количество доступных препаратов - (9).\n"
+		 "Используйте латиницу для ввода названия и кода препарата.\n \n");
+  int Selection;
+
+  Number = 6;
+  while ((Selection = Menu()) != '0' && Selection != 27)
+    switch (Selection)
+    {
+    case '1':
+      Del();
+      break;
+    case '2':
+      Add();
+      break;
+    case '3':
+      Sort();
+      break;
+    case '4':
+      Load();
+      break;
+    case '5':
+      Save();
+      break;
+    case '6':
+      Print();
+      break;
+    }
+} /* End of 'main' function */
+
